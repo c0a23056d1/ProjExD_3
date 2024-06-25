@@ -100,7 +100,7 @@ class Beam:
         self.ビームの左座標 = こうかとんの右座標
         self.vx, self.vy = +5, 0
         """
-        self.img = pg.transform.rotozoom(pg.image.load("fig/beam.png"), 0, 2.0)
+        self.img = pg.image.load(f"fig/beam.png")
         self.rct: pg.Rect = self.img.get_rect()
         self.rct.left = bird.rct.right   
         self.rct.centery = bird.rct.centery
