@@ -160,6 +160,9 @@ class Score:
         self.rct.center = (100, HEIGHT-50)
     
     def update(self, screen: pg.Surface):
+        """
+        スコアを表示させる文字列Surfaceの生成
+        """
         self.img =self.fonto.render(f"スコア：{self.score}", 0, self.color)
         screen.blit(self.img, self.rct)
 
